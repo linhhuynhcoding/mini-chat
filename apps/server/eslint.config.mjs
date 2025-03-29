@@ -21,6 +21,7 @@ export default tseslint.config(
       sourceType: 'module',
       parserOptions: {
         projectService: true,
+        // @ts-ignore
         tsconfigRootDir: import.meta.dirname,
       },
     },
@@ -33,17 +34,17 @@ export default tseslint.config(
       'prettier/prettier': [
         'warn',
         {
-            arrowParens: 'always',
-            semi: true,
-            trailingComma: 'all',
-            tabWidth: 4,
-            endOfLine: 'auto',
-            useTabs: false,
-            singleQuote: true,
-            printWidth: 120,
-            jsxSingleQuote: true,
+          arrowParens: 'always',
+          semi: true,
+          trailingComma: 'all',
+          tabWidth: 4,
+          endOfLine: 'auto',
+          useTabs: false,
+          singleQuote: true,
+          printWidth: 120,
+          jsxSingleQuote: true,
         },
-    ],
+      ],
     },
   },
 );
